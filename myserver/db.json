@@ -1,0 +1,44 @@
+{
+    "arts": [
+        {
+            "id": 1,
+            "name": "Together Is Beautiful",
+            "medium": "Acrylic Art",
+            "price": 545,
+            "description":"Experience the beauty of unity and collaboration in the 'Together is Beautiful' artwork, crafted with vibrant acrylic hues",
+            "photo": "277667"
+          },
+          {
+            "id": 2,
+            "name": "We Stick Together",
+            "medium": "Acrylic Art",
+            "price": 445,
+            "description":"We Stick Together artwork celebrates unity and resilience through vibrant colors and interconnected shapes",
+            "photo": "462358"
+          },
+      {
+        "id": 3,
+        "name": "A Rainy Day",
+        "medium": "Acrylic Art",
+        "price": 445,
+        "description":"A Rainy Day captures the tranquility and beauty of nature as raindrops dance upon the earth, evoking a sense of peace and nostalgia",
+        "photo": "259600"
+      },
+      {
+        "id": 4,
+        "name": "A Sunset At Sea",
+        "medium": "Acrylic Art",
+        "price": 445,
+        "description":"Experience the tranquil beauty of A Sunset at Sea, an acrylic masterpiece capturing the serene hues of dusk over the ocean. With expert brushstrokes, this artwork transports you to a peaceful seaside setting, where the sky blends into shades of orange and pink, reflecting on the tranquil waters below. Each stroke of the acrylic paint brings depth and dimension to the scene, evoking a sense of calm and wonder. Let yourself be immersed in the timeless allure of nature's twilight spectacle with this captivating artwork. Perfect for adorning any space with a touch of coastal elegance and serenity",
+        "photo": "534182"
+      },
+      {
+        "id": 5,
+        "name": "A Soul",
+        "medium": "Acrylic Art",
+        "price": 445,
+        "description":"A captivating portrayal of feminine strength and grace, evoking emotions with every stroke",
+        "photo": "164558"
+      }
+    ]
+  }
