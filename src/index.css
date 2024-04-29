@@ -1,0 +1,323 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+body {
+  margin-top: 0px;
+  font-family: PT Sans, Helvetica;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  font-size: medium;
+ 
+
+ 
+
+
+}
+
+.mainheader {
+  color: rgb(169, 169, 236);
+}
+
+
+p {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+li {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-family: 'PT Sans', Verdana, Arial;
+  font-weight: small;
+}
+
+h4 {
+  text-align: center;
+}
+
+.mainheader {
+  clear: both;
+  /* width: 100%; */
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  background-color:#d8c8f9;
+  color: black;
+
+ 
+}
+.mainheader-logo{
+ text-align: left;
+}
+
+.mainheader-text{
+  text-align: center;
+}
+
+.imgall{
+margin-top: 15px;
+margin-left: 30px;
+width: 160px;
+length:160px;
+padding: 10px 10px 10px 10px;
+}
+
+table,th,td {
+ 
+  border: 1px solid lightgray !important;
+  margin-left: 330px;
+  margin-right: 100px;
+  align-content: left;
+  box-shadow: inset;
+  text-align: center;
+
+}
+table{
+  width: 70% !important;
+}
+
+.img-fluid{
+  width: 50% !important;
+  border: 3px solid #a693c2;
+  margin-top: 45px !important;
+  margin-left: 180px;
+  height: 40% !important;
+}
+
+.bidtab{
+  margin-left: 0px !important;
+
+}
+th{
+  background-color: #8c52ff !important;
+  color:#fff !important;
+}
+
+.btn-primary{
+  background-color :#8c52ff !important;;
+  color:#fff !important;
+  width: 20%;
+  border: #a693c2;
+  border-radius: 5px;
+  
+
+
+}
+
+.grid{
+  margin-top:2px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+ 
+ 
+
+
+
+}
+
+.cardbox{
+  display: flex;
+  /* margin-left: 70px ;
+  margin-right: 110px; */
+ /* // justify-content:space-between center; */
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-content: center;
+
+ 
+}
+
+.btnsee{
+align-content: center;
+width: 100px;
+}
+
+.btn-secondary{
+  background-color :#8c52ff !important;;
+  color:#fff !important;
+ width: 50%;
+ align-content: center;
+  border: #a693c2;
+  border-radius: 5px;
+  align-items: center;
+  margin-left: 95px;
+  margin-bottom: 25px;
+}
+
+.btnn{
+  height: 105% ;
+
+}
+ .subtitleStyle {
+   font-family: PT Sans;
+   font-size: xxx-large;
+  color: #8c52ff;
+  /* padding: 10px 10px 10px 10px; */
+text-align:center;
+
+  
+    
+   
+ }; 
+
+ .subtitleStyle-sub{
+  font-family: PT Sans;
+  font-size: x-large;
+ color: #8c52ff;
+ padding: 10px 10px 10px 10px;
+ }
+
+.wrapper{
+  display:grid !important;
+  grid-template-columns:repeat(auto-fit,minmax(12rem,16rem))  !important;
+  gap:2rem;
+  justify-content:center;
+  margin-top: 50px;
+}
+
+.auctiontext{
+  margin-top: 32px !important;
+}
+
+.btn{
+  background-color :#8c52ff !important;;
+  color:#fff !important;
+ width: 100% !important;
+ height: 9% ;
+ align-content: center;
+  border: #a693c2;
+  border-radius: 5px;
+  align-items: center;
+
+
+
+
+}
+
+.loginwrap{
+  height: 80vh;
+  padding: 20 20 20 20px;
+  /* background-image: url("/public/artImages/backgr.jpg"); */
+}
+
+.login{
+
+  width:380px;
+  height:450px;
+  border-radius: 5px;
+  background-color:  #d8c8f9;
+  color: black;
+  padding:20px;
+  border:1px solid #8c52ff !important;
+}
+
+.registerwrap{
+  height: 80vh;
+
+  padding: 20 20 20 20px;
+}
+
+.register{
+
+  width:500px;
+  height: 550px;
+  border-radius: 5px;
+  background-color:  #d8c8f9;
+  color: black;
+  padding:60px;
+  border:1px solid #8c52ff !important;
+}
+.registerside{
+  width:500px;
+  height: 550px;
+  background-image: url(/public/artlogo.png);
+  border-radius: 5px;
+  background-color:  #d8c8f9;
+  color: black;
+  padding:20px;
+  border:1px solid #8c52ff !important;
+}
+.colored{
+  background-color :#8c52ff !important;
+  color:#fff !important;
+}
+
+.validation{
+ color: red;
+}
+
+.loginside{
+
+  width:470px;
+  height: 450px;
+  background-image: url(/public/artlogo.png);
+  border-radius: 5px;
+  background-color:  #d8c8f9;
+  color: black;
+  padding:20px;
+  border:1px solid #8c52ff !important;
+}
+
+.avtr{
+  background-color:#8c52ff !important;
+  padding-left: 3;
+
+}
+
+.logout{
+
+  width:60px;
+  height:60px;
+ 
+  color:#8c52ff !important;
+  font-style: italic;
+
+
+}
+
+li{
+  list-style-type: none;
+}
+
+.dropdown-menu{
+  width:5px;
+}
+
+.profile{
+  padding-left:30px}
+
+ .bglog{
+  background-color: #8c52ff;
+ }
+
+
