@@ -102,16 +102,7 @@ const toggle= "welcome" + ' ' + textFromStorage;
 
 </header>
 
-  <footer >
 
- 
-  <p>&copy; 2024 &nbsp; By Ketzart &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  
- 
-  Follow Us  &nbsp;&nbsp;&nbsp;
-  <img src="./artImages/instagram.png" className="imgsrc"></img> &nbsp;&nbsp;&nbsp;  <img src="./artImages/facebook.png" className="imgsrc"></img>&nbsp;&nbsp;&nbsp;  <img src="./artImages/twitter.png" className="imgsrc"></img></p>
-
-        </footer>
 
 
     
