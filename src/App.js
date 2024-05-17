@@ -36,6 +36,13 @@ const [nav,setNav] = useState({current:navValues.login, navigate});
 
 
     </Routes> */}
+  {
+ nav.current === navValues.home && <Footer />
+ }
+ {
+ nav.current === navValues.art && <Footer />
+ }
+   
     </navigationContext.Provider>
   
 </>
