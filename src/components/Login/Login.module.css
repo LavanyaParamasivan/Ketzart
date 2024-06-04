@@ -1,0 +1,20 @@
+.signinlogo{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+ margin-bottom: 10px;
+}
+.luxury {
+    max-width: 1040px;
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .luxury .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 4rem 0;
+  }

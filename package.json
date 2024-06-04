@@ -15,6 +15,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1",
     "react-multi-carousel": "^2.8.5",
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^6.22.3",
@@ -22,6 +23,7 @@
     "react-sf-building-blocks": "^1.0.87",
     "react-toastify": "^10.0.5",
     "sf-nav": "^1.0.73",
+    "styled-components": "^6.1.11",
     "validator": "^13.11.0",
     "web-vitals": "^2.1.4"
   },

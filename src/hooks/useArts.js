@@ -4,7 +4,7 @@ const useArts =()=>{
     const[arts,setArts] = useState([]);
     useEffect(() => {
       const fetchHouses = async () => {
-        const response = await fetch("http://localhost:3001/arts");
+        const response = await fetch("https://ketzartdataorgin.onrender.com/arts");
         const arts = await response.json();
         setArts(arts);
       };

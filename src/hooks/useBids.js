@@ -8,7 +8,7 @@ const useBids = (artId) => {
 
   useEffect(() => {
     const fetchBids = async () => {
-        const response = await fetch(`http://localhost:3001/bids?artId=${artId}`);
+        const response = await fetch(`https://ketzartdataorgin.onrender.com/bids?artId=${artId}`);
         const bids = await response.json();
       setBids(bids);
  
@@ -17,7 +17,7 @@ const useBids = (artId) => {
   }, []);
 
   const postBid = async (bid) => {
-    await fetch(`http://localhost:3001/bids?artId=${bid.artId}`, {
+    await fetch(`https://ketzartdataorgin.onrender.com/bids?artId=${bid.artId}`, {
       method:"POST",
       headers: {
         Accept: "application/json",
@@ -29,7 +29,7 @@ const useBids = (artId) => {
     .catch(handleError);
   };
   const updatedBid = async (bid) => {
-  await fetch(`http://localhost:3001/bids/${bid.id}`, {
+  await fetch(`https://ketzartdataorgin.onrender.com/bids/${bid.id}`, {
       method:"PUT",
       headers: {
         Accept: "application/json",
@@ -42,7 +42,7 @@ const useBids = (artId) => {
    
   };
 const deletedBid = async (bid) => {
-  await fetch(`http://localhost:3001/bids/${bid.id}`, {
+  await fetch(`https://ketzartdataorgin.onrender.com/bids/${bid.id}`, {
       method:"DELETE",
       headers: {
         Accept: "application/json",

@@ -1,8 +1,8 @@
 import navValues from "../helpers/navValues";
-import Art from "./art";
-import ArtList from "./artList";
-import Login from "./Login";
-import Register from "./Register"
+import Art from "./Art/art";
+import ArtList from "./Artlist/artList";
+import Login from "./Login/Login";
+import Register from "./Register/Register"
 
 
 const ComponentPicker = ({ currentNavLocation }) => {

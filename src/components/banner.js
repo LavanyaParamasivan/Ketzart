@@ -5,45 +5,10 @@ import { navigationContext } from "../App";
 import navValues from "../helpers/navValues"; 
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
+
 import { Navbar,Nav,NavDropdown,NavItem } from "react-bootstrap";
 
 
-// const subtitleStyle = {
-//     fontFamily: "PT Sans",
-//   fontSize: "xxx-large",
-//   color: "#8c52ff",
-
-
-// };
-
-// function stringToColor(string) {
-//     let hash = 0;
-//     let i;
-  
-//     /* eslint-disable no-bitwise */
-//     for (i = 0; i < string.length; i += 1) {
-//       hash = string.charCodeAt(i) + ((hash << 5) - hash);
-//     }
-  
-//     let color = '#';
-  
-//     for (i = 0; i < 3; i += 1) {
-//       const value = (hash >> (i * 8)) & 0xff;
-//       color += `00${value.toString(16)}`.slice(-2);
-//     }
-//     /* eslint-enable no-bitwise */
-  
-//     return color;
-//   }
-  
-//   function stringAvatar(name) {
-//     return {
-//       sx: {
-//         bgcolor: stringToColor(name),
-//       },
-//       children: `${name.split(' ')[0][0]}${name.split(' ')[1][0]}`,
-//     };
-//   }
 
 const Banner = (props) =>{
     const {navigate }= useContext(navigationContext);
@@ -57,7 +22,9 @@ const toggle= "welcome" + ' ' + textFromStorage;
     return (
 <>
 
-               
+  
+   
+     
 <header className="row mainheader">
 
     <div className="col-1 mb-4">
@@ -82,38 +49,16 @@ const toggle= "welcome" + ' ' + textFromStorage;
   </NavDropdown>
         </Nav>
     </Navbar>
-    {/* {
-        open &&   <div  ref={menuRef} className="bg-white p-4 w-30 shadow-lg absolute -center top-20"> 
-        <ul>
-       {
-           Menu.map((menu)=>(
-               <li onClick={()=>setOpen(false)} className="p-2 text-lg cursor-pointer rounded hover:bg-blue-100" key={menu}>
-                   {menu}
-               </li>
-       ))
-       }
-        </ul>
-            </div>
-    }
-   */}
+  
   
   </div>
-
+ 
 
 </header>
 
-  <footer >
-
  
-  <p>&copy; 2024 &nbsp; By Ketzart &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  
+    
  
-  Follow Us  &nbsp;&nbsp;&nbsp;
-  <img src="./artImages/instagram.png" className="imgsrc"></img> &nbsp;&nbsp;&nbsp;  <img src="./artImages/facebook.png" className="imgsrc"></img>&nbsp;&nbsp;&nbsp;  <img src="./artImages/twitter.png" className="imgsrc"></img></p>
-
-        </footer>
-
-
     
 </>
        

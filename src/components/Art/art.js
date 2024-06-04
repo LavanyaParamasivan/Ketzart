@@ -1,12 +1,14 @@
 import { useContext } from "react";
-import currencyFormatter from "../helpers/currencyFormator";
-import { navigationContext } from "../App";
-import Bids from "./bids";
-import navValues from "../helpers/navValues";
+import currencyFormatter from "../../helpers/currencyFormator";
+import { navigationContext } from "../../App";
+import Bids from "../Bids/bids";
+import navValues from "../../helpers/navValues";
 import { useNavigate } from "react-router-dom";
 import { useCallback, useState } from 'react';
-import  Breadcrumb from './Breadcrumb';
-import Banner from "./banner";
+
+import Banner from "../banner";
+import styles from './art.module.css'
+
 
 const Art = () => {
   const {param:art}= useContext(navigationContext);
@@ -18,11 +20,12 @@ const Art = () => {
   }
   return (
     <>
-     <Banner headerText="KetzArt" subText="Relish The Creativity"/> 
-    <Breadcrumb crumbs={crumbs} selected={selected}/>
-    <div className="row ">
-      <div className="col-5 art">
-        <div className="row mt-2">
+   
+    <div className={styles.luxury}>
+
+
+
+        <div >
           <img
             className="img-fluid"
             src={
@@ -31,10 +34,9 @@ const Art = () => {
             alt="art pic"
           />
         </div>
-      </div>
-      
-      <div className="col-7 bid">
-        <div className="row mt-2">
+       
+  
+        {/* <div className="row mt-2">
         
         <h2 className="col-12">{art.name}</h2>
         </div>
@@ -47,13 +49,25 @@ const Art = () => {
           </h2>
         </div>
         <div className="row">
-          <div className="col-12 mt-2">{art.description}</div>
-        </div>
-        <Bids art={art}/>
-      </div>
+          <div className="col-md-12 mt-2">{art.description}</div>
+        </div> */}
   
-    </div>
-    <div></div>
+              <div className={styles.heading}>
+        <h1>{art.name}</h1>
+        <h4>{art.medium}</h4>
+        <h4>  {currencyFormatter.format(art.price)}</h4>
+        <div className={styles.text_bg}>
+          <p>
+            <span>{art.description}</span>
+          </p>
+        </div>
+
+      </div>
+     
+        <Bids art={art}/>
+      {/* </div> */}
+      </div>
+   
     
     </>
     

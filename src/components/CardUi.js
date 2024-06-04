@@ -7,9 +7,7 @@ import Row from 'react-bootstrap/Row';
 
 const Card = props =>{
     return(
-      // <Row xs={2} md={3} className="g-4">
-      // {Array.from({ length: 4 }).map((_, idx) => (
-      //   <Col key={idx}>
+     
         <div className="card">
         <div className="card-body">
           <img src={props.img} alt="" className="card-img-top"/>
@@ -25,9 +23,7 @@ const Card = props =>{
           </button>
  
       </div>
-    //   </Col>
-    //   ))}
-    // </Row>
+ 
       
       
     )

@@ -3,9 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
-  import { handleResponse, handleError } from "../hooks/apiUtils";
-  import { navigationContext } from "../App";
-import navValues from "../helpers/navValues";
+  import { handleResponse, handleError } from "../../hooks/apiUtils";
+  import { navigationContext } from "../../App";
+import navValues from "../../helpers/navValues";
+import styles from './Login.module.css'
 
 
 function Login(){
@@ -28,7 +29,7 @@ function Login(){
                 password:password
             }
             // Submit the data to the backend for authentication
-           fetch(`http://localhost:3001/user/${login.id}`).then((res)=>{
+           fetch(`https://ketzartdataorgin.onrender.com/user/${login.id}`).then((res)=>{
                 return res.json();
             }).then((respo)=>{
               if(Object.keys(respo).length === 0)  {
@@ -55,33 +56,18 @@ function Login(){
             }).catch((err)=>{
                 toast.error('Login Failed due to:'+ err.message);
             })
-        // try{
-        //         if(response.status!== 404){
-        //             toast.success('Logged in Successfully', 'success');
-        //              //navigate(navValues.home);
-        //              const username = email.slice(0,email.lastIndexOf('@'))
-        //             //  const username = fullname + ' ' + fullname ;
-        //              setTimeout(() => {
-        //                 navigate(navValues.home,username);
-        //               }, 1500);  
-        //         }
-        //         else if(response.status === 404){
-        //             toast.error('Invalid Login.', 'error');
-        //         }
-        //     }
-        //     catch{
-        //         handleError();
-        //     }
+      
         
     }
        
     }
 return (
     <>
-  
-    <div className=' loginwrap bg-white d-flex align-items-center justify-content-center w-100'>
-    <div className='loginside'></div>
+      <div className={styles.luxury}>
+    <div className=' loginwrap bg-white d-flex align-items-center justify-content-center w-100 contentl-wrap '>
+ 
 <div className='login'>
+<img src="./logo.png" className={styles.signinlogo} alt="logo" />
     <h2 className='mb-3 text-center'>Sign-In</h2>
     <form className="needs-validation">
     <div className='form-group  mb-2'>
@@ -123,6 +109,7 @@ theme="colored"
     </form>
     </div>
   
+</div>
 </div></>
 )
 

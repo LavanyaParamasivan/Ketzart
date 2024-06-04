@@ -1,32 +1,31 @@
-/* body {
+
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+ul {
+  list-style-type: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 
 
 body {
   margin-top: 0px;
-  font-family: PT Sans, Helvetica;
+  font-family: 'PT Sans', Verdana, Arial;
   margin-left: auto;
   margin-right: auto;
   background-color: whitesmoke;
   font-size: medium;
- 
-
- 
-
 
 }
-
+body, html { overflow-x:hidden; }
 .mainheader {
   color: rgb(169, 169, 236);
 }
@@ -41,7 +40,7 @@ h3 {
 }
 
 li {
-  font-weight: bold;
+
   line-height: 1.5;
 }
 
@@ -67,100 +66,19 @@ h4 {
 
 .mainheader {
   clear: both;
-  /* width: 100%; */
-  /* margin-left: 5px;
-  margin-right: 5px; */
   background-color:#d8c8f9;
   color: black;
 
  
-}
-.mainheader-logo{
- text-align: left;
-}
-
-.mainheader-text{
-  text-align: center;
-}
-
-.imgall{
-margin-top: 15px;
-margin-left: 30px;
-width: 160px;
-length:160px;
-padding: 10px 10px 10px 10px;
-}
-
-table,th,td {
- 
-  border: 1px solid lightgray !important;
-  margin-left: 330px;
-  margin-right: 100px;
-  align-content: left;
-  box-shadow: inset;
-  text-align: center;
-
-}
-table{
-  width: 70% !important;
-}
-
-.img-fluid{
-  width: 50% !important;
-  border: 3px solid #a693c2;
-  margin-top: 45px !important;
-  margin-left: 180px;
-  height: 40% !important;
-}
-
-.bidtab{
-  margin-left: 0px !important;
-
-}
-th{
-  background-color: #8c52ff !important;
-  color:#fff !important;
-}
-
-.btn-primary{
-  background-color :#8c52ff !important;;
-  color:#fff !important;
-  width: 20%;
-  border: #a693c2;
-  border-radius: 5px;
-  
-
-
 }
 
 .grid{
   margin-top:2px !important;
   display: flex !important;
   flex-wrap: wrap !important;
- 
- 
-
-
-
 }
 
-.cardbox{
-  display: flex;
-  /* margin-left: 70px ;
-  margin-right: 110px; */
- /* // justify-content:space-between center; */
-  margin-left: auto;
-  margin-right: auto;
-  flex-direction: column;
-  align-content: center;
 
- 
-}
-
-.btnsee{
-align-content: center;
-width: 100px;
-}
 
 .btn-secondary{
   background-color :#8c52ff !important;;
@@ -174,66 +92,49 @@ width: 100px;
   margin-bottom: 25px;
 }
 
-.btnn{
-  height: 105% ;
-
-}
- .subtitleStyle {
-   font-family: PT Sans;
-   font-size: xxx-large;
-  color: #8c52ff;
-  /* padding: 10px 10px 10px 10px; */
-text-align:center;
-
-  
-    
-   
- }; 
-
- .subtitleStyle-sub{
-  font-family: PT Sans;
-  font-size: x-large;
- color: #8c52ff;
- padding: 10px 10px 10px 10px;
- }
 
 .wrapper{
   display:grid !important;
   grid-template-columns:repeat(auto-fit,minmax(12rem,16rem))  !important;
   gap:2rem;
   justify-content:center;
-  margin-top: 50px;
+
 }
 
-.auctiontext{
-  margin-top: 32px !important;
-}
+
 
 .btn{
   background-color :#8c52ff !important;;
   color:#fff !important;
  width: 100% !important;
- height: 9% ;
+ height: 10% !important;
+ align-content: center;
+  border: #a693c2;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.btnbid{
+  background-color :#8c52ff !important;;
+  color:#fff !important;
+ width:20% !important;
+ height: 150% !important;
  align-content: center;
   border: #a693c2;
   border-radius: 5px;
   align-items: center;
 
-
-
-
 }
 
 .loginwrap{
-  height: 80vh;
-  padding: 20 20 20 20px;
-  /* background-image: url("/public/artImages/backgr.jpg"); */
+  height: 85vh;
+
 }
 
 .login{
 
   width:380px;
-  height:450px;
+  height:520px;
   border-radius: 5px;
   background-color:  #d8c8f9;
   color: black;
@@ -244,29 +145,19 @@ text-align:center;
 .registerwrap{
   height: 80vh;
 
-  padding: 20 20 20 20px;
 }
 
 .register{
 
   width:500px;
-  height: 550px;
+  height: 600px;
   border-radius: 5px;
   background-color:  #d8c8f9;
   color: black;
-  padding:60px;
+  padding:35px;
   border:1px solid #8c52ff !important;
 }
-.registerside{
-  width:500px;
-  height: 550px;
-  background-image: url(/public/artlogo.png);
-  border-radius: 5px;
-  background-color:  #d8c8f9;
-  color: black;
-  padding:20px;
-  border:1px solid #8c52ff !important;
-}
+
 .colored{
   background-color :#8c52ff !important;
   color:#fff !important;
@@ -276,17 +167,6 @@ text-align:center;
  color: red;
 }
 
-.loginside{
-
-  width:470px;
-  height: 450px;
-  background-image: url(/public/artlogo.png);
-  border-radius: 5px;
-  background-color:  #d8c8f9;
-  color: black;
-  padding:20px;
-  border:1px solid #8c52ff !important;
-}
 
 .avtr{
   background-color:#8c52ff !important;
@@ -294,16 +174,7 @@ text-align:center;
 
 }
 
-.logout{
 
-  width:60px;
-  height:60px;
- 
-  color:#8c52ff !important;
-  font-style: italic;
-
-
-}
 
 li{
   list-style-type: none;
@@ -319,5 +190,112 @@ li{
  .bglog{
   background-color: #8c52ff;
  }
+ .content-wrap {
+  padding-bottom: 18.5rem;    /* Footer height */
+}
+@media (min-width: 1200px) and (max-width: 2159px)  {
+  .bidbox{
+    display: flex !important; 
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  margin-left: 2px !important;
+  }
+  
+}
 
 
+ @media screen and (min-width : 0px) and (max-width : 900px){
+ 
+  .loginwrap{
+    height: 85vh;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    padding: 20 20 20 20px;
+ 
+  }
+  .btn{
+    background-color :#8c52ff !important;;
+    color:#fff !important;
+   width: 100% !important;
+   height: 10% !important;
+   align-content: center;
+    border: #a693c2;
+    border-radius: 5px;
+    align-items: center;
+  }
+  .btnbid{
+    background-color :#8c52ff !important;;
+    color:#fff !important;
+   width: 30% !important;
+   height: 150% !important;
+   align-content: center;
+    border: #a693c2;
+    border-radius: 5px;
+    align-items: center;
+  
+  
+  
+  
+  }
+  
+
+  .login{
+
+    max-width:95%;
+    height:85%;
+    border-radius: 5px;
+    background-color:  #d8c8f9;
+    color: black;
+    padding:20px;
+    border:1px solid #8c52ff !important;
+    margin-top: -30px !;
+  }
+  .register{
+
+    max-width:95%;
+    height: 98%;
+    border-radius: 5px;
+    background-color:  #d8c8f9;
+    color: black;
+    padding:40px;
+    border:1px solid #8c52ff !important;
+
+  }
+ 
+  .mainheader {
+    clear: both;
+    background-color:#d8c8f9;
+    color: black;
+   padding: 0 0 0 0 !important;
+   text-align: center !important;
+   position: relative;
+   align-items: center;
+  
+ 
+    
+   
+  }
+  .wrapper{
+    display:grid !important;
+    grid-template-columns:repeat(auto-fit,minmax(12rem,16rem))  !important;
+    gap:1rem;
+    justify-content:center;
+
+  }
+  
+ 
+  .mt-5{
+    margin-top: 5rem !important;
+  
+  }
+  
+  .bidbox{
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  }
+      
+   
+ 
+ }

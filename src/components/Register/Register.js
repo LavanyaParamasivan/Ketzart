@@ -2,10 +2,11 @@ import React, { useState,useContext } from'react';
 
 import {useNavigate} from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
-import { handleResponse, handleError } from "../hooks/apiUtils";
-import { navigationContext } from "../App";
-import navValues from "../helpers/navValues";
+import { handleResponse, handleError } from "../../hooks/apiUtils";
+import { navigationContext } from "../../App";
+import navValues from "../../helpers/navValues";
 import validator from "validator";
+import styles from './Register.module.css'
 
 
 
@@ -34,7 +35,7 @@ function Register() {
          password:password,
          username:username
      }
-const response= await fetch('http://localhost:3001/user', {
+const response= await fetch('https://ketzartdataorgin.onrender.com/user', {
          method: 'POST',
          headers: {
              Accept: "application/json",
@@ -71,10 +72,11 @@ setMessage("Please Enter Valid Email")
    
    }
     return(
-   
+        <div className={styles.luxury}>
         <div className=' registerwrap bg-white d-flex align-items-center justify-content-center w-100'>
-                <div className='registerside'></div>
+          
 <div className='register'>
+<img src="./logo.png" className={styles.signinlogo} alt="logo" />
     <h2 className='mb-2 text-center'>REGISTER </h2>
     <form className="needs-validation">
 
@@ -124,6 +126,7 @@ theme="colored"
 
     </form>
     </div>
+</div>
 </div>
     );
             };

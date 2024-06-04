@@ -1,9 +1,9 @@
 import { useState } from "react";
-import currencyFormatter from "../helpers/currencyFormator";
-import useBids from "../hooks/useBids";
-import ReadOnlyRow from "./readOnlyRow";
-import EditableRow from "./editableRow";
-
+import currencyFormatter from "../../helpers/currencyFormator";
+import useBids from "../../hooks/useBids";
+import ReadOnlyRow from "../readOnlyRow";
+import EditableRow from "../editableRow";
+import styles from './bids.module.css'
 
 const Bids = ({ art }) => {
   const { bids, addBid,updateBid,deleteBid } = useBids(art.id);
@@ -81,10 +81,13 @@ const handleEditFormChange =(event)=>{
 
   return (
     <>
-      <div className="row mt-4">
-        <div className="col-8">
+         
+  
+         <div className={styles.luxury}>
+            
+     
           <form onSubmit={handleEditSubmit}>
-          <table className="table table-sm bidtab">
+          <table className="table table-sm">
             <thead>
               <tr>
                 <th>Bidder</th>
@@ -94,15 +97,7 @@ const handleEditFormChange =(event)=>{
             </thead>
             <tbody>
               {bids.map((b) => (
-                // <tr key={b.id} >
-                //   <td>{b.bidder}</td>
-                //   <td>{currencyFormatter.format(b.amount)}</td>
-                //   <td>
-                //   <a><img src="./artImages/edit.png" className="imgsrc" alt="logo" ></img></a>
-                //   <a><img src="./artImages/trash.png" className="imgsrc" alt="logo"></img></a>
-                //   </td>
-                
-                // </tr>'
+         
                 <>
                 {editconatcId === b.id ? <EditableRow  editFormData={editFormData} handleEditFormChange={handleEditFormChange}  handleCancelClick={handleCancelClick}/> :    <ReadOnlyRow b={b} handleEditClick={handleEditClick} handleDeleteClick={handleDeleteClick}/>}
          
@@ -116,23 +111,25 @@ const handleEditFormChange =(event)=>{
             </tbody>
           </table>
           </form>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-2">
+      
+      
+        <div className="row" >
+        <div className="col-md-10" >
           <input
             id="bidder"
-            className="h-100"
+       
             type="text"
             value={newBid.bidder}
             onChange={(e) => setNewBid({ ...newBid, bidder: e.target.value })}
             placeholder="Bidder"
           ></input>
+          </div>
         </div>
-        <div className="col-2">
+        <div className="row">
+        <div className="col-md-10" >
           <input
             id="amount"
-            className="h-100"
+          
             type="number"
             value={newBid.amount}
             onChange={(e) =>
@@ -140,14 +137,16 @@ const handleEditFormChange =(event)=>{
             }
             placeholder="Amount"
           ></input>
-        </div>
-        <div className="col-6">
-          <button className="btnn btn-primary" onClick={onBidSubmitClick}>
+          </div>
+        </div >
+        <div className="row">
+        <div className="col-md-10" >
+          <button className="btnbid btn-primary" onClick={onBidSubmitClick}>
             Add
           </button>
         </div>
+ </div>
       </div>
-  
     </>
   );
 };

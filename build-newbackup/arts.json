@@ -1,0 +1,44 @@
+{
+    "arts": [
+        {
+            "id": 1,
+            "name": "Together Is Beautiful",
+            "medium": "Acrylic Art",
+            "price": 545,
+            "description":"Experience the beauty of unity and collaboration in the 'Together is Beautiful' artwork, crafted with vibrant acrylic hues",
+            "photo": "277667"
+          },
+          {
+            "id": 2,
+            "name": "We Stick Together",
+            "medium": "Acrylic Art",
+            "price": 445,
+            "description":"We Stick Together artwork celebrates unity and resilience through vibrant colors and interconnected shapes",
+            "photo": "462358"
+          },
+      {
+        "id": 3,
+        "name": "A Sunset At Sea",
+        "medium": "Acrylic Art",
+        "price": 445,
+        "description":"A Sunset At Sea captures the tranquil beauty of the ocean as the sun dips below the horizon, painting the sky with vibrant hues of orange and pink",
+        "photo": "259600"
+      },
+      {
+        "id": 4,
+        "name": "A Sunset At Sea",
+        "medium": "Acrylic Art",
+        "price": 445,
+        "description":"A Sunset At Sea captures the tranquil beauty of the ocean as the sun dips below the horizon, painting the sky with vibrant hues of orange and pink",
+        "photo": "534182"
+      },
+      {
+        "id": 5,
+        "name": "A Women",
+        "medium": "Acrylic Art",
+        "price": 445,
+        "description":"A captivating portrayal of feminine strength and grace, evoking emotions with every stroke",
+        "photo": "164558"
+      }
+    ]
+  }
