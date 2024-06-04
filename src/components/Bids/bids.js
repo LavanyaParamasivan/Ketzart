@@ -87,7 +87,7 @@ const handleEditFormChange =(event)=>{
             
      
           <form onSubmit={handleEditSubmit}>
-          <table className="table table-sm">
+          <table className="table table-md">
             <thead>
               <tr>
                 <th>Bidder</th>

@@ -57,7 +57,7 @@ const Art = () => {
         <h4>{art.medium}</h4>
         <h4>  {currencyFormatter.format(art.price)}</h4>
         <div className={styles.text_bg}>
-          <p>
+          <p >
             <span>{art.description}</span>
           </p>
         </div>

@@ -24,7 +24,7 @@ return(
         <h1>Arts For Auction</h1>
         <div className={styles.text_bg}>
           <p>
-            <span>Discover exceptional pieces and unique masterpieces at our exclusive art auction, where passion and creativity come together</span>
+            <span >Discover exceptional pieces and unique masterpieces at our exclusive art auction, where passion and creativity come together</span>
           </p>
         </div>
 

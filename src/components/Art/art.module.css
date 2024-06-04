@@ -29,6 +29,7 @@
     position: absolute;
     left: 0;
     right: 0;
+    padding: 10px;
   }
   
   .text_bg p {
@@ -46,7 +47,7 @@
       text-align: center;
       padding: 2rem;
     }
-  
+    
   
   }
   
